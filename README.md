@@ -6,7 +6,7 @@ By Ryan McDermott and Alyson Zepeda
 
 ###windows:
 
-http://download.arduino.org/IDE/1.8.1/arduino-1.8.1-windows.zip
+https://www.arduino.cc/download_handler.php?f=/arduino-1.8.1-windows.exe
 
 ###mac:
 
