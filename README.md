@@ -6,12 +6,11 @@ By Ryan McDermott and Alyson Zepeda
 
 ###windows:
 
-https://www.arduino.cc/download_handler.php?f=/arduino-1.8.1-windows.exe
+https://downloads.arduino.cc/arduino-1.8.1-windows.exe
 
 ###mac:
 
-http://download.arduino.org/IDE/1.8.1/arduino-1.8.1-macosx-signed.zip
-
+https://downloads.arduino.cc/arduino-1.8.1-macosx.zip
 
 
 ##Sample Code
