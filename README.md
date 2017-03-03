@@ -154,3 +154,4 @@ void loop() {
   strip.show(); // Initialize all pixels to 'off'
   delay(1);
 }
+```
