@@ -126,3 +126,31 @@ void loop() {
   delay(1);
 }
 ```
+
+#betterButton
+
+#include <Adafruit_NeoPixel.h>
+
+#define LEDPIN 2
+#define BUTTONPIN 3
+
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(1, LEDPIN, NEO_GRB + NEO_KHZ800);
+
+void setup() {
+  pinMode(BUTTONPIN, INPUT_PULLUP);
+  strip.begin();
+  strip.show(); // Initialize all pixels to 'off'
+}
+
+void loop() {
+
+  if (digitalRead(BUTTONPIN) == LOW) {
+    strip.setPixelColor(0, 255, 255, 255);
+  }
+
+  if (digitalRead(BUTTONPIN) == HIGH) {
+    strip.setPixelColor(0, 0, 0, 0);
+  }
+  strip.show(); // Initialize all pixels to 'off'
+  delay(1);
+}
