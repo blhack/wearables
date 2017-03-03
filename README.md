@@ -128,7 +128,7 @@ void loop() {
 ```
 
 #betterButton
-
+```
 #include <Adafruit_NeoPixel.h>
 
 #define LEDPIN 2
