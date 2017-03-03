@@ -24,9 +24,9 @@ void setup() {
 	}
 
 void loop() {
-	pinMode(13, HIGH);
+	digitalWrite(13, HIGH);
 	delay(500);
-	pinMode(13, LOW);
+	digitalWrite(13, LOW);
 	delay(500);
 	}
 ```
