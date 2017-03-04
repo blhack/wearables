@@ -58,52 +58,6 @@ void loop() {
 }
 ```
 
-###Lightswitch
-```
-#include <Adafruit_NeoPixel.h>
-
-#define LEDPIN 2
-#define BUTTONPIN 3
-
-bool onState = false;
-
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(1, LEDPIN, NEO_GRB + NEO_KHZ800);
-
-void setup() {
-  pinMode(BUTTONPIN, INPUT_PULLUP);
-  strip.begin();
-  strip.show(); // Initialize all pixels to 'off'
-}
-
-void loop() {
-
-  if (digitalRead(BUTTONPIN) == LOW) {
-    delay(100);
-    if (onState == false) {
-      onState = true;
-    } else {
-      onState = false;
-    }
-    Serial.print("Lights on: ");
-    Serial.println(onState);
-    while (digitalRead(BUTTONPIN) == LOW) {
-      delay(1);
-    }
-  }
-
-  if (onState == true) {
-     strip.setPixelColor(0, 255, 255, 255);   
-  }
-
-  if (onState == false) {
-     strip.setPixelColor(0, 0, 0, 0);
-  }
-  
-  strip.show(); // Initialize all pixels to 'off'
-  delay(1);
-}
-```
-
 #Multiple Colors
 ```
 #include <Adafruit_NeoPixel.h>
