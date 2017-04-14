@@ -38,7 +38,7 @@ void loop() {
 ```
 #include <Adafruit_NeoPixel.h>
 
-#define PIN 2
+#define PIN 8
 int color = 0;
 
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(1, PIN, NEO_GRB + NEO_KHZ800);
@@ -65,7 +65,7 @@ void loop() {
 ```
 #include <Adafruit_NeoPixel.h>
 
-#define LEDPIN 2
+#define LEDPIN 8
 
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(3, LEDPIN, NEO_GRB + NEO_KHZ800);
 
@@ -89,7 +89,7 @@ void loop() {
 ```
 #include <Adafruit_NeoPixel.h>
 
-#define LEDPIN 2
+#define LEDPIN 8
 #define BUTTONPIN 3
 
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(1, LEDPIN, NEO_GRB + NEO_KHZ800);
@@ -103,11 +103,11 @@ void setup() {
 void loop() {
 
   if (digitalRead(BUTTONPIN) == LOW) {
-    strip.setPixelColor(0, 255, 255, 255);
+    strip.setPixelColor(0, 0, 255, 0);
   }
 
   if (digitalRead(BUTTONPIN) == HIGH) {
-    strip.setPixelColor(0, 0, 0, 0);
+    strip.setPixelColor(0, 255, 0, 255);
   }
   strip.show(); // Initialize all pixels to 'off'
   delay(1);
@@ -118,7 +118,7 @@ void loop() {
 ```
 #include <Adafruit_NeoPixel.h>
 
-#define LEDPIN 2
+#define LEDPIN 8
 #define BUTTONPIN 3
 #define CHANGEDELAY 750
 
