@@ -19,14 +19,17 @@ https://downloads.arduino.cc/arduino-1.8.1-macosx.zip
 (copy and paste this into the arduino IDE)
 
 ```
+
+int LEDPIN = 7;
+
 void setup() {
-	pinMode(13, OUTPUT);
+	pinMode(LEDPIN, OUTPUT);
 	}
 
 void loop() {
-	digitalWrite(13, HIGH);
+	digitalWrite(LEDPIN, HIGH);
 	delay(500);
-	digitalWrite(13, LOW);
+	digitalWrite(LEDPIN, LOW);
 	delay(500);
 	}
 ```
